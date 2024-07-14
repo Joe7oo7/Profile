@@ -50,7 +50,7 @@ form:hover {
 @media (max-width: 1024px) {
   .container-form {
     padding: 15vh 3vh 3vh 3vh;
-    background: url("assets/backgrounds/2151005751.jpg");
+    background: url("/public/assets/backgrounds/2151005751.jpg");
     background-size: cover;
     background-position: center;
   }
