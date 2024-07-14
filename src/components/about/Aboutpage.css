@@ -11,7 +11,7 @@
   position: relative;
   border: 2px solid black;
   /* background: linear-gradient(rgb(40, 36, 36), rgba(67, 54, 216, 0.808)); */
-  background: url(C:\Joe\MyProjects\React\Portfolio\src\assets\backgrounds\12874600_9Z_2102.w026.n002.120B.p1.120.jpg);
+  background: url("/assets/backgrounds/12874600_9Z_2102.w026.n002.120B.p1.120.jpg");
   background-size: cover;
   background-position:top;
 }
