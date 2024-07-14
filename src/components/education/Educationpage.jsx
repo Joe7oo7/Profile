@@ -83,7 +83,7 @@ const Education = () => {
 
         <div className="right-sidebar">
           <div className={`right-side-item ${hoveredItem === 'right-item1' ? 'scale-up' : ''}`} id="right-item1">
-            <img className="img-fluid degree-img" src="./Portfolio/public/assets/backgrounds/2151005751.jpg" loading="lazy" alt="" />
+            <img className="img-fluid degree-img" src="./public/assets/backgrounds/2151005751.jpg" loading="lazy" alt="" />
             <div className="card-body text-light">
               <h5 className="text-decoration-underline">DEGREE</h5>
               <p>BE Computer Science Engineering</p>
@@ -93,7 +93,7 @@ const Education = () => {
             </div>
           </div>
           <div className={`right-side-item ${hoveredItem === 'right-item2' ? 'scale-up' : ''}`} id="right-item2">
-            <img className="img-fluid degree-img" src="./Portfolio/public/assets/college/2151007434.jpg" loading="lazy" alt="" />
+            <img className="img-fluid degree-img" src="./public/assets/college/2151007434.jpg" loading="lazy" alt="" />
             <div className="card-body text-light">
               <h5 className="text-decoration-underline">HSE</h5>
               <p>Higher Secondary Education</p>
@@ -103,7 +103,7 @@ const Education = () => {
             </div>
           </div>
           <div className={`right-side-item ${hoveredItem === 'right-item3' ? 'scale-up' : ''}`} id="right-item3">
-            <img className="img-fluid degree-img" src="./Portfolio/public/assets/college/2151040347.jpg" loading="lazy" alt="" />
+            <img className="img-fluid degree-img" src="./public/assets/college/2151040347.jpg" loading="lazy" alt="" />
             <div className="card-body text-light">
               <h5 className="text-decoration-underline">SSC</h5>
               <p>Secondary School Education</p>
@@ -113,7 +113,7 @@ const Education = () => {
             </div>
           </div>
           <div className={`right-side-item ${hoveredItem === 'right-item4' ? 'scale-up' : ''}`} id="right-item4">
-            <img className="img-fluid degree-img" src="./Portfolio/public/assets/certificates/Eduonix Certificate.jpg" loading="lazy" alt="" />
+            <img className="img-fluid degree-img" src="./public/assets/certificates/Eduonix Certificate.jpg" loading="lazy" alt="" />
             <div className="card-body text-light">
               <h5 className="text-decoration-underline">Certification</h5>
               <p>Basic Web Development From Scratch Course</p>
@@ -123,7 +123,7 @@ const Education = () => {
             </div>
           </div>
           <div className={`right-side-item ${hoveredItem === 'right-item5' ? 'scale-up' : ''}`} id="right-item5">
-            <img className="img-fluid degree-img" src="./Portfolio/public/assets/certificates/Credo Certificate.jpg" loading="lazy" alt="" />
+            <img className="img-fluid degree-img" src="./public/assets/certificates/Credo Certificate.jpg" loading="lazy" alt="" />
             <div className="card-body text-light">
               <h5 className="text-decoration-underline">Certification</h5>
               <p>FullStack WebDevelopment Course</p>
