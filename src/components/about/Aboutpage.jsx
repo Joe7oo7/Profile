@@ -34,21 +34,21 @@ const AboutPage = () => {
           <div className="carousel-slide">
             <img
               className="my-image"
-              src="./1.webp"
+              src="/1.webp"
               alt="Image 1"
             />
           </div>
           <div className="carousel-slide">
             <img
               className="my-image"
-              src="./2.webp"
+              src="/2.webp"
               alt="Image 2"
             />
           </div>
           <div className="carousel-slide">
             <img
               className="my-image"
-              src=".3.webp"
+              src="/3.webp"
               alt="Image 3"
             />
           </div>
