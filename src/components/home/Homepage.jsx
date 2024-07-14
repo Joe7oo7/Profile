@@ -50,7 +50,7 @@ const HomeComponent = () => {
 
       <div className="home-img">
         <div className="box" ref={boxRef}>
-          <div className="box1"><img src="./icons8-html-480.png" alt="" className="img-fluid"/></div>
+          <div className="box1"><img src="\src\assets\icons\icons8-html-480.png" alt="" className="img-fluid"/></div>
           <div className="box2"><img src="\src\assets\icons\icons8-javascript.svg" alt=""   className="img-fluid" /></div>
           <div className="box3"><img src="\src\assets\icons\icons8-bootstrap.svg" alt=""   className="img-fluid" /></div>
           <div className="box4" ><img src="\src\assets\icons\icons8-css.svg" alt="" className="img-fluid" /></div>

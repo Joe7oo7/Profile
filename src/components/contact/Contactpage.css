@@ -1,45 +1,60 @@
-.container-form{
-  min-height:100vh;
-  width:100%;
-  padding:15vh 0vh 10vh 0vh;
-  display:flex;
-  justify-content:center;
+.container-form {
+  min-height: 100vh;
+  width: 100%;
+  padding: 15vh 0vh 10vh 0vh;
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  background:linear-gradient(to left,rgb(45, 47, 66),rgb(35, 35, 102),rgb(74, 27, 136));
-  background-size:cover;
+  background: linear-gradient(
+    to left,
+    rgb(45, 47, 66),
+    rgb(35, 35, 102),
+    rgb(74, 27, 136)
+  );
+  background-size: cover;
   background-position: center;
 }
-label{
-  color:white;
+label {
+  color: white;
   margin-bottom: 5px;
 }
 
-.btn{
+.btn {
   margin-top: 3vh;
 }
 
-form{
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   border: 5px solid black;
-  padding: 2vh 5vh 5vh 5vh;
-  min-width:40vw;
-  min-height:50vh;
-  border-radius:20px;
-  background: rgba(0, 0, 0, 0.461);
+  padding: 5vh 5vh 5vh 5vh;
+  min-width: 40vw;
+  min-height: 50vh;
+  border-radius: 20px;
+  transition: filter 0.3s ease;
+  background: linear-gradient(black, rgba(59, 59, 61, 0.644));
+  box-shadow: 32px 32px 0 0 rgb(16, 16, 16);
 }
-.ack{
-  margin-top:2vh;
-  color:rgb(255, 255, 255);
+
+form:hover {
+  /* filter: brightness(1.1); */
+  background: linear-gradient(rgb(27, 18, 71), rgba(190, 190, 237, 0.632));
 }
-@media(max-width:1024px){
-  .container-form{
-    padding:15vh 3vh 3vh 3vh;
-    background:url("/src/assets/backgrounds/2151005751.jpg");
-    background-size:cover;
+
+.ack {
+  margin-top: 2vh;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 1024px) {
+  .container-form {
+    padding: 15vh 3vh 3vh 3vh;
+    background: url("assets/backgrounds/2151005751.jpg");
+    background-size: cover;
     background-position: center;
   }
-  form{
-    min-width:80%;
+  form {
+    min-width: 80%;
   }
-
 }

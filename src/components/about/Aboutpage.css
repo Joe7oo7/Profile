@@ -1,6 +1,5 @@
 /* Add this CSS rule to prevent scrollbar jitter */
 
-
 .about-page {
   display: flex;
   min-height: 100vh;
