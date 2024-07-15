@@ -6,8 +6,7 @@ import 'jquery';
 import "./Navbarpage.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser,faEnvelope,faGraduationCap,faCode } from '@fortawesome/free-solid-svg-icons';
-
-
+import VoiceCommandHandler from "../voice/VoiceCommandHandler";
 const Navbarpage = () => {
   return (
     <div>
@@ -15,6 +14,7 @@ const Navbarpage = () => {
         <Link to="/" className="logo navbar-brand">
           Joe
         </Link>
+        <VoiceCommandHandler></VoiceCommandHandler>
         <ul className="navbar-nav nav-links">
           <li className="nav-items">
             <Link className="nav-link" to="/">
@@ -41,11 +41,11 @@ const Navbarpage = () => {
              Education
             </Link>
           </li>
-          <li  className="nav-items">
+          {/* <li  className="nav-items">
             <Link className="nav-link" to="/modet">
              Modet
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
 

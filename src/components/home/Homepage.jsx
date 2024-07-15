@@ -11,6 +11,7 @@ import {
   FaCode
 } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 const HomeComponent = () => {
   const boxRef = useRef(null);
@@ -98,9 +99,9 @@ const HomeComponent = () => {
           </a>
         </div>
 
-        <a href="/contact" className="btn btn-primary">
+        <Link to="/contact" className="btn btn-primary">
           Hire Me!
-        </a>
+        </Link>
         <a href="" className="btn btn-primary">
           Resume
         </a>

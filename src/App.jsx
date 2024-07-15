@@ -8,8 +8,10 @@ import Skillspage from "./components/skills/Skillspage";
 import Educationpage from "./components/education/Educationpage";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Modet from "./components/motiondetection/Modet";
+import VoiceCommandHandler from "./components/voice/VoiceCommandHandler";
 
 function App() {
+
   return (
     <Router>
       <div>
