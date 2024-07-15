@@ -8,7 +8,7 @@ import icon5 from '/public/assets/icons/icons8-react-js.svg';
 import icon6 from '/public/assets/icons/python-svgrepo-com.svg';
 import icon7 from '/public/assets/icons/django-svgrepo-com.svg';
 import icon8 from '/public/assets/icons/mysql.svg';
-import icon9 from '/public/assets/icons/icons/git.svg';
+import icon9 from '/public/assets/icons/icons/github.svg';
 import icon10 from '/public/assets/icons/aws-svgrepo-com.svg';
 const Skillspage = () => {
   return (
