@@ -115,8 +115,7 @@
   .box6 {
     height: 100px;
     width: 100px;
-    background: rgba(0, 0, 0, 0.635);
-    backdrop-filter: blur(10px);
+    background: rgb(0, 0, 0);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-top: 3px solid rgba(255, 255, 255, 0.75);
     border-left: 3px solid rgba(255, 255, 255, 0.75);
@@ -143,6 +142,7 @@
     transform: translateZ(350px);
     background: url("/assets/icons/django-svgrepo-com.svg");
     background-size: 10vw 10vh;
+    background-color: #04031083;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -155,6 +155,7 @@
     object-fit: cover;
     background: url("/assets/icons/icons8-react-js.svg");
     background-size: 9vw 9vh;
+    background-color: #040310a4;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -166,6 +167,7 @@
     transform: translateZ(30px);
     background: url("/assets/icons/mysql.svg");
     background-size: 7vw 7vh;
+    background-color: #040310a3;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -177,6 +179,7 @@
     transform: translateZ(100px);
     background: url("/assets/icons/python-svgrepo-com.svg");
     background-size: 8vw 8vh;
+    background-color: #040310ab;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -189,6 +192,7 @@
     background: url("/assets/icons/github.svg");
     background-size: 7vw 7vh;
     background-repeat: no-repeat;
+    background-color: #aaa9b4a3;
     background-position: center;
   }
   
@@ -199,6 +203,7 @@
     transform: translateZ(160px);
     background: url("/assets/icons/aws-svgrepo-com.svg");
     background-size: 8vw 8vh;
+    background-color: #aeacc2a3;
     background-repeat: no-repeat;
     background-position: center;
   }

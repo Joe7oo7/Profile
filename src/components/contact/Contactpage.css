@@ -34,6 +34,7 @@ form {
   min-height: 50vh;
   border-radius: 20px;
   transition: filter 0.3s ease;
+  animation:from-small 1s ease;
   background: linear-gradient(black, rgba(59, 59, 61, 0.644));
   box-shadow: 32px 32px 0 0 rgb(16, 16, 16);
 }
@@ -56,5 +57,16 @@ form:hover {
   }
   form {
     min-width: 80%;
+  }
+}
+
+@keyframes from-small{
+  0%{
+    transform: scale(0.1);
+    opacity:40%;
+  }
+  100%{
+    transform: scale(1);
+    opacity:100%;
   }
 }

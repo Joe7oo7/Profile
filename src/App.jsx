@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes,Navigate } from "react-router-dom";
 import Navbarpage from "./components/navbar/Navbarpage";
 import Homepage from "./components/home/Homepage";
 import Aboutpage from "./components/about/Aboutpage";
@@ -22,6 +22,7 @@ function App() {
           <Route path="/skills" element={<Skillspage/>}></Route>
           <Route path="/education" element={<Educationpage/>}></Route>
           <Route path="/modet" element={<Modet/>}></Route>
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </Router>

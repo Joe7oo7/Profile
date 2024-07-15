@@ -5,11 +5,12 @@
   min-height: 100vh;
   width: 100%;
   padding: 15vh 2 5vh 2vh;
+  transition:all 0.5s ease;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   position: relative;
-  border: 2px solid black;
+ 
   /* background: linear-gradient(rgb(40, 36, 36), rgba(67, 54, 216, 0.808)); */
   background: url("/assets/backgrounds/12874600_9Z_2102.w026.n002.120B.p1.120.webp");
   background-size: cover;
@@ -62,7 +63,10 @@
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
     overflow: hidden; /* To prevent content overflow */
-    border: 15px solid black;
+    border-left: 14px solid rgb(122, 126, 174);
+  border-right: 14px solid rgba(167, 89, 255, 0.737);
+  border-bottom: 14px solid rgb(255, 150, 239);
+  border-top: 14px solid rgba(50, 10, 72, 0.815);
     background: linear-gradient(rgba(0, 0, 0, 0.509), rgba(45, 7, 67, 0.3));
     padding: 0; /* Reset padding */
   }
