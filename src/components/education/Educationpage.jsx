@@ -145,7 +145,7 @@ const Education = () => {
           >
             <img
               className="img-fluid degree-img"
-              src={degree_img}
+              src={college_img}
               loading="lazy"
               alt=""
             />
@@ -206,7 +206,7 @@ const Education = () => {
           >
             <img
               className="img-fluid degree-img"
-              src={ceritificate1}
+              src={certificate1}
               loading="lazy"
               alt=""
             />
@@ -226,7 +226,7 @@ const Education = () => {
           >
             <img
               className="img-fluid degree-img"
-              src={cerificate2}
+              src={certificate2}
               loading="lazy"
               alt=""
             />

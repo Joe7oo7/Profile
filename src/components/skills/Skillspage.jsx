@@ -8,7 +8,7 @@ import icon5 from '/public/assets/icons/icons8-react-js.svg';
 import icon6 from '/public/assets/icons/python-svgrepo-com.svg';
 import icon7 from '/public/assets/icons/django-svgrepo-com.svg';
 import icon8 from '/public/assets/icons/mysql.svg';
-// import icon9 from '/public/assets/icons/icons/github.svg';
+import icon9 from '/public/assets/icons/github.svg';
 import icon10 from '/public/assets/icons/aws-svgrepo-com.svg';
 const Skillspage = () => {
   return (
@@ -27,7 +27,7 @@ const Skillspage = () => {
           <img
             className="img-fluid"
             src={icon2}
-            alt="html-icon"
+            alt="css-icon"
           />
         </div>
         <div className="skill">
@@ -35,7 +35,7 @@ const Skillspage = () => {
           <img
             className="img-fluid"
             src={icon3}
-            alt="html-icon"
+            alt="js-icon"
           />
         </div>
         <div className="skill">
@@ -43,7 +43,7 @@ const Skillspage = () => {
           <img
             className="img-fluid"
             src={icon4}
-            alt="html-icon"
+            alt="bootstrap-icon"
           />
         </div>
         <div className="skill">
@@ -51,7 +51,7 @@ const Skillspage = () => {
           <img
             className="img-fluid"
             src={icon5}
-            alt="html-icon"
+            alt="react-icon"
           />
         </div>
         <div className="skill">
@@ -59,7 +59,7 @@ const Skillspage = () => {
           <img
             className="img-fluid"
             src={icon6}
-            alt="html-icon"
+            alt="python-icon"
           />
         </div>
         <div className="skill">
@@ -67,7 +67,7 @@ const Skillspage = () => {
           <img
             className="img-fluid"
             src={icon7}
-            alt="html-icon"
+            alt="django-icon"
           />
         </div>
         <div className="skill">
@@ -75,23 +75,23 @@ const Skillspage = () => {
           <img
             className="img-fluid"
             src={icon8}
-            alt="html-icon"
+            alt="mysql-icon"
           />
         </div>
-        {/* <div className="skill">
+        <div className="skill">
           <h5>Github</h5>
           <img
             className="img-fluid"
-             src={icon9}
-            alt="html-icon"
+            src={ icon9 }
+            alt="github-icon"
           />
-        </div> */}
+        </div>
         <div className="skill">
           <h5>AWS</h5>
           <img
             className="img-fluid"
             src={icon10}
-            alt="html-icon"
+            alt="aws-icon"
           />
         </div>
       </div>
