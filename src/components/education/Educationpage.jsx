@@ -1,5 +1,12 @@
-import React, { useState } from 'react';
-import './Educationpage.css';
+import React, { useState } from "react";
+import "./Educationpage.css";
+import college_img from "/public/assets/college/2151066388.jpg";
+import hsc_img from "/public/assets/college/2151007434.jpg";
+import ssc_img from "/public/assets/college/2151040347.jpg";
+
+import certificate1 from "/public/assets/certificates/Eduonix Certificate.jpg";
+import certificate2 from "/public/assets/certificates/Credo Certificate.jpg";
+
 
 const Education = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -16,7 +23,12 @@ const Education = () => {
     <div>
       <div className="education-page">
         <div className="college study card">
-          <img className="img-fluid wrapper" src="./Portfolio/public/assets/college/2151066388.jpg" loading="lazy" alt="" />
+          <img
+            className="img-fluid wrapper"
+            src={college_img}
+            loading="lazy"
+            alt=""
+          />
           <div className="card-body">
             <h5 className="text-decoration-underline">DEGREE</h5>
             <p>BE Computer Science Engineering</p>
@@ -25,7 +37,12 @@ const Education = () => {
           </div>
         </div>
         <div className="hsc study card">
-          <img className="img-fluid wrapper" src="./Portfolio/public/assets/college/2151007434.jpg" loading="lazy" alt="" />
+          <img
+            className="img-fluid wrapper"
+            src={hsc_img}
+            loading="lazy"
+            alt=""
+          />
           <div className="card-body">
             <h5 className="text-decoration-underline">HSE</h5>
             <p>St.Peter's Higher Secondary School</p>
@@ -34,7 +51,12 @@ const Education = () => {
           </div>
         </div>
         <div className="sslc study card">
-          <img className="img-fluid wrapper" src="./Portfolio/public/assets/college/2151040347.jpg" loading="lazy" alt="" />
+          <img
+            className="img-fluid wrapper"
+            src={ssc_img}
+            loading="lazy"
+            alt=""
+          />
           <div className="card-body">
             <h5 className="text-decoration-underline">SSC</h5>
             <p>St.Peter's Higher Secondary School</p>
@@ -42,18 +64,26 @@ const Education = () => {
             <p>StateBoard Tamilnadu</p>
           </div>
         </div>
-
         <div className="certification study card">
-          <img className="img-fluid wrapper" src="./Portfolio/public/assets/certificates/Eduonix Certificate.jpg" loading="lazy" alt="" />
+          <img
+            className="img-fluid wrapper"
+            src={certificate1}
+            loading="lazy"
+            alt=""
+          />
           <div className="card-body">
             <h5 className="text-decoration-underline">Certification</h5>
             <p>Basic WebDevelopment Course</p>
             <p>Eduonix Learning Solutions-Chennai</p>
           </div>
         </div>
-
         <div className="certification study card">
-          <img className="img-fluid wrapper" src="./Portfolio/public/assets/certificates/Credo Certificate.jpg" loading="lazy" alt="" />
+          <img
+            className="img-fluid wrapper"
+            src={certificate2}
+            loading="lazy"
+            alt=""
+          />
           <div className="card-body">
             <h5 className="text-decoration-underline">Certification</h5>
             <p>Django with ReactJs-FullStack Development</p>
@@ -64,26 +94,61 @@ const Education = () => {
 
       <div className="education">
         <div className="left-sidebar text-center">
-          <div className="side-menu-item" id="item1" onMouseOver={() => handleMouseOver('right-item1')} onMouseOut={handleMouseOut}>
+          <div
+            className="side-menu-item"
+            id="item1"
+            onMouseOver={() => handleMouseOver("right-item1")}
+            onMouseOut={handleMouseOut}
+          >
             <h5 className="text-light">Degree</h5>
           </div>
-          <div className="side-menu-item" id="item2" onMouseOver={() => handleMouseOver('right-item2')} onMouseOut={handleMouseOut}>
+          <div
+            className="side-menu-item"
+            id="item2"
+            onMouseOver={() => handleMouseOver("right-item2")}
+            onMouseOut={handleMouseOut}
+          >
             <h5 className="text-light">HSE</h5>
           </div>
-          <div className="side-menu-item" id="item3" onMouseOver={() => handleMouseOver('right-item3')} onMouseOut={handleMouseOut}>
+          <div
+            className="side-menu-item"
+            id="item3"
+            onMouseOver={() => handleMouseOver("right-item3")}
+            onMouseOut={handleMouseOut}
+          >
             <h5 className="text-light">SSC</h5>
           </div>
-          <div className="side-menu-item" id="item4" onMouseOver={() => handleMouseOver('right-item4')} onMouseOut={handleMouseOut}>
+          <div
+            className="side-menu-item"
+            id="item4"
+            onMouseOver={() => handleMouseOver("right-item4")}
+            onMouseOut={handleMouseOut}
+          >
             <h5 className="text-light">Certification</h5>
           </div>
-          <div className="side-menu-item" id="item5" onMouseOver={() => handleMouseOver('right-item5')} onMouseOut={handleMouseOut}>
+          <div
+            className="side-menu-item"
+            id="item5"
+            onMouseOver={() => handleMouseOver("right-item5")}
+            onMouseOut={handleMouseOut}
+          >
             <h5 className="text-light">Certification</h5>
           </div>
         </div>
 
         <div className="right-sidebar">
-          <div className={`right-side-item ${hoveredItem === 'right-item1' ? 'scale-up' : ''}`} id="right-item1">
-            <img className="img-fluid degree-img" src="./public/assets/backgrounds/2151005751.jpg" loading="lazy" alt="" />
+          <div
+            className={`right-side-item ${
+              hoveredItem === "right-item1" ? "scale-up" : ""
+            }`}
+            id="right-item1"
+          >
+            <img
+              className="img-fluid degree-img"
+              src={degree_img}
+              loading="lazy"
+              alt=""
+            />
             <div className="card-body text-light">
               <h5 className="text-decoration-underline">DEGREE</h5>
               <p>BE Computer Science Engineering</p>
@@ -92,8 +157,18 @@ const Education = () => {
               <p>Chennai-Tamilnadu</p>
             </div>
           </div>
-          <div className={`right-side-item ${hoveredItem === 'right-item2' ? 'scale-up' : ''}`} id="right-item2">
-            <img className="img-fluid degree-img" src="./public/assets/college/2151007434.jpg" loading="lazy" alt="" />
+          <div
+            className={`right-side-item ${
+              hoveredItem === "right-item2" ? "scale-up" : ""
+            }`}
+            id="right-item2"
+          >
+            <img
+              className="img-fluid degree-img"
+              src={hsc_img}
+              loading="lazy"
+              alt=""
+            />
             <div className="card-body text-light">
               <h5 className="text-decoration-underline">HSE</h5>
               <p>Higher Secondary Education</p>
@@ -102,18 +177,39 @@ const Education = () => {
               <p>StateBoard-Tamilnadu</p>
             </div>
           </div>
-          <div className={`right-side-item ${hoveredItem === 'right-item3' ? 'scale-up' : ''}`} id="right-item3">
-            <img className="img-fluid degree-img" src="./public/assets/college/2151040347.jpg" loading="lazy" alt="" />
+          <div
+            className={`right-side-item ${
+              hoveredItem === "right-item3" ? "scale-up" : ""
+            }`}
+            id="right-item3"
+          >
+            <img
+              className="img-fluid degree-img"
+              src={ssc_img}
+              loading="lazy"
+              alt=""
+            />
             <div className="card-body text-light">
               <h5 className="text-decoration-underline">SSC</h5>
               <p>Secondary School Education</p>
-              <p>90%</p><source />
+              <p>90%</p>
+              <source />
               <p>St.Peters Higher Secondary School</p>
               <p>StateBoard-Tamilnadu</p>
             </div>
           </div>
-          <div className={`right-side-item ${hoveredItem === 'right-item4' ? 'scale-up' : ''}`} id="right-item4">
-            <img className="img-fluid degree-img" src="./public/assets/certificates/Eduonix Certificate.jpg" loading="lazy" alt="" />
+          <div
+            className={`right-side-item ${
+              hoveredItem === "right-item4" ? "scale-up" : ""
+            }`}
+            id="right-item4"
+          >
+            <img
+              className="img-fluid degree-img"
+              src={ceritificate1}
+              loading="lazy"
+              alt=""
+            />
             <div className="card-body text-light">
               <h5 className="text-decoration-underline">Certification</h5>
               <p>Basic Web Development From Scratch Course</p>
@@ -122,8 +218,18 @@ const Education = () => {
               <p>2022</p>
             </div>
           </div>
-          <div className={`right-side-item ${hoveredItem === 'right-item5' ? 'scale-up' : ''}`} id="right-item5">
-            <img className="img-fluid degree-img" src="./public/assets/certificates/Credo Certificate.jpg" loading="lazy" alt="" />
+          <div
+            className={`right-side-item ${
+              hoveredItem === "right-item5" ? "scale-up" : ""
+            }`}
+            id="right-item5"
+          >
+            <img
+              className="img-fluid degree-img"
+              src={cerificate2}
+              loading="lazy"
+              alt=""
+            />
             <div className="card-body text-light">
               <h5 className="text-decoration-underline">Certification</h5>
               <p>FullStack WebDevelopment Course</p>
