@@ -4,6 +4,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./Aboutpage.css";
 import Lottie from "react-lottie";
 import Wave from "react-wavify";
+import first_image from "./assets/Myimg/1.webp"
+import second_image from "./assets/Myimg/2.webp"
+import third_image from "./assets/Myimg/3.webp"
 
 const AboutPage = () => {
   const [animationClassLeft, setAnimationClassLeft] = useState("open-left");
@@ -34,21 +37,21 @@ const AboutPage = () => {
           <div className="carousel-slide">
             <img
               className="my-image"
-              src="/public/assets/Myimg/1.webp"
+              src={first_image}
               alt="Image 1"
             />
           </div>
           <div className="carousel-slide">
             <img
               className="my-image"
-              src="/public/assets/Myimg/2.webp"
+              src={second_image}
               alt="Image 2"
             />
           </div>
           <div className="carousel-slide">
             <img
               className="my-image"
-              src="/public/assets/Myimg/3.webp"
+              src={third_image}
               alt="Image 3"
             />
           </div>
