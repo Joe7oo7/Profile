@@ -33,7 +33,7 @@ const AboutPage = () => {
   return (
     <div className="about-page">
       <div className={`left-sidebar1 element ${animationClassLeft}`}>
-        <Carousel showThumbs={false} autoPlay interval={2000} infiniteLoop>
+        <Carousel className="carousel" showThumbs={false} autoPlay interval={4000} infiniteLoop>
           <div className="carousel-slide">
             <img
               className="my-image"

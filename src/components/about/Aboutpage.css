@@ -5,16 +5,16 @@
   min-height: 100vh;
   width: 100%;
   padding: 15vh 2 5vh 2vh;
-  transition:all 0.5s ease;
+  transition: all 0.5s ease;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   position: relative;
- 
+
   /* background: linear-gradient(rgb(40, 36, 36), rgba(67, 54, 216, 0.808)); */
   background: url("/assets/backgrounds/12874600_9Z_2102.w026.n002.120B.p1.120.webp");
   background-size: cover;
-  background-position:top;
+  background-position: top;
 }
 
 .left-sidebar1 {
@@ -31,26 +31,29 @@
   width: 40%;
   min-height: 70vh;
   padding: 20px;
-  color:white;
-  transition:all 0.3s ease;
-  background:linear-gradient(black,rgb(68, 68, 111));
+  color: white;
+  transition: all 0.3s ease;
+  background: linear-gradient(black, rgb(68, 68, 111));
   border-radius: 15px;
   border: 3px solid rgb(0, 0, 0);
   box-shadow: 32px 32px 0 0 black;
+}
+.carousel{
+  transition:0.5s ease;
 }
 
 .my-image {
   min-width: 10vh;
   min-height: 50vh;
   object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
 }
 
 @media (min-width: 1025px) {
-  
   .about-page {
     padding: 15vh 0vh 0vh 0vh;
-    gap:0px;
-    overflow-y:hidden;
+    gap: 0px;
+    overflow-y: hidden;
   }
   .left-sidebar1 {
     width: 30vw; /* Ensure width and height are the same */
@@ -64,41 +67,38 @@
     align-items: center; /* Center content vertically */
     overflow: hidden; /* To prevent content overflow */
     border-left: 14px solid rgb(122, 126, 174);
-  border-right: 14px solid rgba(167, 89, 255, 0.737);
-  border-bottom: 14px solid rgb(255, 150, 239);
-  border-top: 14px solid rgba(50, 10, 72, 0.815);
+    border-right: 14px solid rgba(167, 89, 255, 0.737);
+    border-bottom: 14px solid rgb(255, 150, 239);
+    border-top: 14px solid rgba(50, 10, 72, 0.815);
     background: linear-gradient(rgba(0, 0, 0, 0.509), rgba(45, 7, 67, 0.3));
     padding: 0; /* Reset padding */
   }
-  .detail{
-    margin-left:20px;
+  .detail {
+    margin-left: 20px;
   }
   .my-image {
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    object-position: 50% 20vh  ;
-    
+    object-position: 50% 20vh;
   }
-  .right-sidebar1{
+  .right-sidebar1 {
     animation: top-down 1s ease-in-out infinite alternate-reverse;
-    width:35vw;
-    min-height:25vh;
-    border-bottom-right-radius:14%;
+    width: 35vw;
+    min-height: 25vh;
+    border-bottom-right-radius: 14%;
     font-size: 1.2rem;
-    background-color:rgba(0, 0, 0, 0.123);
+    background-color: rgba(0, 0, 0, 0.123);
   }
-  .open-left{
+  .open-left {
     animation: from-left 1.4s ease;
   }
-  .open-right{
+  .open-right {
     animation: from-right 1.4s ease;
-   
   }
 
-  .run{
+  .run {
     animation: top-down 1s ease-in-out infinite alternate-reverse;
- 
   }
   .sea {
     bottom: 0;
@@ -109,22 +109,21 @@
     min-width: 100%;
     overflow: hidden;
     /* border: 2px solid rgb(0, 0, 0); */
-    background:linear-gradient(#32329989);
+    background: linear-gradient(#32329989);
     animation-fill-mode: forwards;
-
   }
-  .wave{
+  .wave {
     height: 45vh;
     min-width: 100%;
-    padding:0;
+    padding: 0;
     animation: from-down 1s ease-in-out;
     animation-fill-mode: forwards;
   }
 }
 
 @media (max-width: 1025px) {
-  .sea{
-    display:none;   
+  .sea {
+    display: none;
   }
 
   .about-page {
@@ -133,30 +132,30 @@
     padding: 15vh 0vh 0vh 0vh;
   }
 
- /* Add this to your existing CSS */
+  /* Add this to your existing CSS */
 
-.left-sidebar1 {
-  max-height: 50vh; /* Ensure width and height are the same */
-  max-width:60vh;  /* Ensure width and height are the same */
-  border-radius: 50%; /* Make it round */
-  margin: auto; /* Center the element horizontally */
-  display: flex; /* To align content within */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  padding: 0; /* Reset padding */
-  overflow: hidden; /* To prevent content overflow */
-  border: 15px solid black;
-  background: linear-gradient(rgba(0, 0, 0, 0.509), rgba(45, 7, 67, 0.3));
-}
+  .left-sidebar1 {
+    max-height: 50vh; /* Ensure width and height are the same */
+    max-width: 60vh; /* Ensure width and height are the same */
+    border-radius: 50%; /* Make it round */
+    margin: auto; /* Center the element horizontally */
+    display: flex; /* To align content within */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 0; /* Reset padding */
+    overflow: hidden; /* To prevent content overflow */
+    border: 15px solid black;
+    background: linear-gradient(rgba(0, 0, 0, 0.509), rgba(45, 7, 67, 0.3));
+  }
 
-/* Adjust the image within the circle */
-.my-image {
-  max-height: 100%; /* Full height of the parent */
-  max-width: 100%; /* Full width of the parent */
-  border-radius: 50%; /* Make the image round */
-  object-fit: cover; /* Ensure the image covers the area */
-  object-position: 50% 20vh; /* Center the image */
-}
+  /* Adjust the image within the circle */
+  .my-image {
+    max-height: 100%; /* Full height of the parent */
+    max-width: 100%; /* Full width of the parent */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Ensure the image covers the area */
+    object-position: 50% 20vh; /* Center the image */
+  }
 
   .right-sidebar1 {
     padding: 4vw;
@@ -166,25 +165,23 @@
     margin-bottom: 5vh;
     animation: none;
   }
-  .detail{
-    margin-left:10px;
+  .detail {
+    margin-left: 10px;
   }
-
 }
 
 @media (max-width: 490px) {
- 
-  .sea{
-    display:none;
+  .sea {
+    display: none;
   }
 
-   .left-sidebar1 {
+  .left-sidebar1 {
     width: 40vw; /* Ensure width and height are the same */
     height: 40vw; /* Ensure width and height are the same */
     min-width: 80vw; /* Ensure width and height are the same */
     min-height: 80vw; /* Ensure width and height are the same */
     border-radius: 50%; /* Make it round */
-    margin:0;/* Center the element horizontally */
+    margin: 0; /* Center the element horizontally */
     display: flex; /* To align content within */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
@@ -200,20 +197,17 @@
     border-radius: 50%; /* Make the image round */
     object-fit: cover; /* Ensure the image covers the area */
   }
-  .right-sidebar1{
-    max-width:90%;
+  .right-sidebar1 {
+    max-width: 90%;
     font-size: 1rem;
   }
 }
 
-@media (max-width:390px){
-  .right-sidebar1{
-    min-width:90%;
+@media (max-width: 390px) {
+  .right-sidebar1 {
+    min-width: 90%;
   }
 }
-
-
-
 
 @keyframes from-right {
   0% {
@@ -237,19 +231,18 @@
 }
 
 @keyframes top-down {
-   0%{
-   
+  0% {
     transform: translateY(-10px);
-   }
-   100%{
+  }
+  100% {
     transform: translateY(10px);
-   }
+  }
 }
 @keyframes from-down {
-  0%{
-   transform: translateY(500px);
+  0% {
+    transform: translateY(500px);
   }
-  100%{
-   transform: translateY(0px);
+  100% {
+    transform: translateY(0px);
   }
 }
