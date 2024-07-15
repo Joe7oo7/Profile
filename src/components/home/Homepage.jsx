@@ -3,11 +3,12 @@ import Typed from "typed.js";
 import VanillaTilt from "vanilla-tilt";
 import { FaHtml5 } from "react-icons/fa";
 import "./Homepage.css";
+import cv from '/public/assets/Josephrex A CV.pdf';
 import {
   FaLinkedin,
   FaStackOverflow,
   FaGithub,
-  FaWhatsapp,
+  FaDev,
   FaCode
 } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -88,21 +89,23 @@ const HomeComponent = () => {
           >
             <FaGithub></FaGithub>
           </a>
-          <a href="#">
-            <FaWhatsapp></FaWhatsapp>
+          <a href="https://dev.to/joe7oo7" target="_blank">
+           <FaDev></FaDev>
           </a>
-          <a href="#">
+          <a href="https://stackoverflow.com/users/23394959/josephrex" target="_blank">
             <FaStackOverflow></FaStackOverflow>
           </a>
-          <a href="#">
+
+          <a href="https://leetcode.com/u/Josephrex7o7/" target="_blank">
             <FaCode></FaCode>
           </a>
+
         </div>
 
         <Link to="/contact" className="btn btn-primary">
           Hire Me!
         </Link>
-        <a href="" className="btn btn-primary">
+        <a href={cv} target="_blank" className="btn btn-primary">
           Resume
         </a>
       </div>

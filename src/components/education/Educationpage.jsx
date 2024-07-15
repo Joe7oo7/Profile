@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "./Educationpage.css";
-import college_img from "/public/assets/college/2151066388.jpg";
 import hsc_img from "/public/assets/college/2151007434.jpg";
 import ssc_img from "/public/assets/college/2151040347.jpg";
-
+import college_img from "/public/assets/college/hogboy.webp"
 import certificate1 from "/public/assets/certificates/Eduonix Certificate.jpg";
 import certificate2 from "/public/assets/certificates/Credo Certificate.jpg";
 

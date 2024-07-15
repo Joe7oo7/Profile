@@ -25,9 +25,10 @@ const AboutPage = () => {
       document.body.classList.add('loaded');
     };
     window.addEventListener('load', onLoad);
-    window.removeEventListener('load', onLoad);
+  
     
-    return () => clearTimeout(timer);
+    return () =>{ clearTimeout(timer);
+    window.removeEventListener('load', onLoad);};
   }, []);
 
   return (
