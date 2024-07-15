@@ -4,9 +4,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./Aboutpage.css";
 import Lottie from "react-lottie";
 import Wave from "react-wavify";
-import first_image from "./assets/Myimg/1.webp"
-import second_image from "./assets/Myimg/2.webp"
-import third_image from "./assets/Myimg/3.webp"
+import first_image from "/public/assets/Myimg/1.webp"
+import second_image from "/public/assets/Myimg/2.webp"
+import third_image from "/public/assets/Myimg/3.webp"
 
 const AboutPage = () => {
   const [animationClassLeft, setAnimationClassLeft] = useState("open-left");
