@@ -304,9 +304,12 @@
   
 }
 @media(max-width:576px){
+  .home{
+    padding:15vh 2vh 1vh 4vh ;
+  }
   .home-content{
     margin-top:10vh;
-
+    width:100%;
   }
   .typing-text{
     font-size:1.2rem;

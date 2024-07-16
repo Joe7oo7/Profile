@@ -40,6 +40,7 @@ const AboutPage = () => {
               className="my-image"
               src={first_image}
               alt="Image 1"
+              loading="lazy"
             />
           </div>
           <div className="carousel-slide">
@@ -47,6 +48,7 @@ const AboutPage = () => {
               className="my-image"
               src={second_image}
               alt="Image 2"
+              loading="lazy"
             />
           </div>
           <div className="carousel-slide">
@@ -54,6 +56,7 @@ const AboutPage = () => {
               className="my-image"
               src={third_image}
               alt="Image 3"
+              loading="lazy"
             />
           </div>
         </Carousel>
