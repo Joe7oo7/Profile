@@ -5,13 +5,10 @@
   min-height: 100vh;
   width: 100%;
   padding: 15vh 2 5vh 2vh;
-  transition: all 0.5s ease;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   position: relative;
-
-  /* background: linear-gradient(rgb(40, 36, 36), rgba(67, 54, 216, 0.808)); */
   background: url("/assets/backgrounds/12874600_9Z_2102.w026.n002.120B.p1.120.webp");
   background-size: cover;
   background-position: top;
@@ -54,6 +51,7 @@
     padding: 15vh 0vh 0vh 0vh;
     gap: 0px;
     overflow-y: hidden;
+    box-sizing: border-box;
   }
   .left-sidebar1 {
     width: 30vw; /* Ensure width and height are the same */
@@ -88,10 +86,10 @@
     background-color: rgba(0, 0, 0, 0.123);
   }
   .open-left {
-    animation: from-left1 1.5s ease;
+    animation: from-left1 1s ease;
   }
   .open-right {
-    animation: from-right1 1.5s ease;
+    animation: from-right1 1s ease;
   }
 
   .run {
@@ -126,14 +124,18 @@
   .about-page {
     flex-direction: column;
     gap: 10vh;
+    justify-content: space-between;
     padding: 15vh 0vh 0vh 0vh;
+    background: linear-gradient(rgb(88, 90, 228), rgb(18, 15, 58),rgb(47, 41, 130));
   }
 
   /* Add this to your existing CSS */
 
   .left-sidebar1 {
-    max-height: 50vh; /* Ensure width and height are the same */
-    max-width: 60vh; /* Ensure width and height are the same */
+    width: 40vw; /* Ensure width and height are the same */
+    height: 40vw; /* Ensure width and height are the same */
+    min-width: 80vw; /* Ensure width and height are the same */
+    min-height: 80vw;
     border-radius: 50%; /* Make it round */
     margin: auto; /* Center the element horizontally */
     display: flex; /* To align content within */

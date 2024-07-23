@@ -18,7 +18,7 @@ const AboutPage = () => {
     const timer = setTimeout(() => {
       setAnimationClassLeft("run");
       setAnimationClassRight("run");
-    }, 1450);
+    }, 1000);
 
     const onLoad = () => {
       document.documentElement.classList.add('loaded');
