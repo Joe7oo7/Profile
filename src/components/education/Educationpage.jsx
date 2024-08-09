@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import "./Educationpage.css";
 import hsc_img from "/public/assets/college/2151007434.jpg";
 import ssc_img from "/public/assets/college/2151040347.jpg";
-import college_img from "/public/assets/college/hogboy.webp"
+import college_img from "/public/assets/college/hogboy.webp";
 import certificate1 from "/public/assets/certificates/Eduonix Certificate.jpg";
 import certificate2 from "/public/assets/certificates/Credo Certificate.jpg";
-
 
 const Education = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -20,7 +19,9 @@ const Education = () => {
 
   return (
     <div>
+      {/* for tabs and mobiles starts */}
       <div className="education-page">
+        {/* college  section starts */}
         <div className="college study card">
           <img
             className="img-fluid wrapper"
@@ -35,6 +36,9 @@ const Education = () => {
             <p>Anna University Tamilnadu</p>
           </div>
         </div>
+        {/* college  section ends */}
+
+        {/* HSC  section starts */}
         <div className="hsc study card">
           <img
             className="img-fluid wrapper"
@@ -49,6 +53,10 @@ const Education = () => {
             <p>StateBoard Tamilnadu</p>
           </div>
         </div>
+        {/* HSC  section ends */}
+
+        {/* SSC  section starts */}
+
         <div className="sslc study card">
           <img
             className="img-fluid wrapper"
@@ -63,6 +71,9 @@ const Education = () => {
             <p>StateBoard Tamilnadu</p>
           </div>
         </div>
+        {/* SSC  section ends */}
+
+        {/* Certification  section starts */}
         <div className="certification study card">
           <img
             className="img-fluid wrapper"
@@ -76,6 +87,7 @@ const Education = () => {
             <p>Eduonix Learning Solutions-Chennai</p>
           </div>
         </div>
+
         <div className="certification study card">
           <img
             className="img-fluid wrapper"
@@ -90,8 +102,14 @@ const Education = () => {
           </div>
         </div>
       </div>
+      {/* Certification  section ends */}
+
+      {/* for tabs and mobiles ends */}
+
+      {/* for Pc's sections starts */}
 
       <div className="education">
+        {/* left side items */}
         <div className="left-sidebar text-center">
           <div
             className="side-menu-item"
@@ -134,7 +152,9 @@ const Education = () => {
             <h5 className="text-light">Certification</h5>
           </div>
         </div>
+        {/* left side item ends */}
 
+        {/* Right side items */}
         <div className="right-sidebar">
           <div
             className={`right-side-item ${
@@ -148,6 +168,7 @@ const Education = () => {
               loading="lazy"
               alt=""
             />
+
             <div className="card-body text-light">
               <h5 className="text-decoration-underline">DEGREE</h5>
               <p>BE Computer Science Engineering</p>
@@ -238,7 +259,9 @@ const Education = () => {
             </div>
           </div>
         </div>
+        {/* Right side items */}
       </div>
+      {/* for Pc's sections ends */}
     </div>
   );
 };

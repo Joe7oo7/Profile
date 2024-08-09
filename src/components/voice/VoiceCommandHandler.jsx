@@ -8,9 +8,11 @@ import { useState } from "react";
 
 const VoiceCommandHandler = () => {
   const [isListening, setIsListening] = useState(false);
-
   const navigate = useNavigate();
   const location = useLocation();
+
+  // commands starts
+
   const commands = [
     {
       command: ["open home", "home", "goto home", "navigate to home"],
@@ -43,13 +45,11 @@ const VoiceCommandHandler = () => {
       callback: () => navigate("/education"),
     },
     {
-      command: [
-       "degree"
-      ],
+      command: ["degree"],
       callback: () => navigate("/degree"),
     },
-    
   ];
+  // commands ends
 
   const { transcript, resetTranscript } = useSpeechRecognition({ commands });
 
@@ -58,21 +58,26 @@ const VoiceCommandHandler = () => {
       alert("Your browser does not support speech recognition.");
     }
   }, []);
+  // transcript reset section starts
 
   useEffect(() => {
     resetTranscript();
   }, [location, resetTranscript]);
 
+  // transcript reset section ends
+  // start and  stop button logic starts
   const handleButtonClick = () => {
     if (isListening) {
       SpeechRecognition.stopListening();
-    } else   try {
-      SpeechRecognition.startListening({ continuous: true });
-    } catch (error) {
-      console.error("Error starting speech recognition:", error);
-    }
+    } else
+      try {
+        SpeechRecognition.startListening({ continuous: true });
+      } catch (error) {
+        console.error("Error starting speech recognition:", error);
+      }
     setIsListening(!isListening);
   };
+  // start and  stop button logic ends
 
   return (
     <div className="voice-container">

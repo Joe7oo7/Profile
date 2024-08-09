@@ -1,3 +1,5 @@
+/* General design starts */
+
 .navbar-brand {
   border: 2px solid white;
   padding: 10px 30px 10px 30px;
@@ -20,7 +22,6 @@
   align-items: center;
   padding: 0 15vh 0 15vh;
   background: linear-gradient(to right, rgb(44, 32, 80), rgba(0, 0, 0, 0.705));
-  /* background:url('/src/assets/backgrounds/22753076_2112.w026.n002.1171B.p1.1171.jpg') ; */
   background-size: cover;
   background-position: center;
   font-size: 20px;
@@ -48,7 +49,6 @@
 .nav-links li .nav-link {
   color: rgb(255, 255, 255);
   padding: 5px 30px;
-  /* border-bottom: 3px solid white; */
   border-radius: 15px;
   transition: all 0.3s ease;
   font-size: 1.1rem;
@@ -61,9 +61,6 @@
   min-width: 100%;
   text-decoration: none;
   cursor: pointer;
-  /* border-bottom: 2px solid white;
-  border-top: 3px solid white; */
-
   border-left: 3px solid white;
   border-right: 3px solid white;
 }
@@ -73,7 +70,6 @@
   list-style-type: none;
   display: flex;
   text-decoration: none;
-  /* transition: color 0.6s ease; */
   flex-basis: auto;
   margin-left: 10px;
   transition: padding-left 0.9s ease, padding-right 0.9s ease, transform 1s ease;
@@ -92,15 +88,18 @@
   padding-right: 20px;
   transform: scale(1.1);
   border-radius: 15px;
-  
   transition: padding-left 0.3s ease, padding-right 0.3s ease,
     transform 0.1s ease;
 }
-.btns{
+.btns {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+
+/* General design endss */
+
+/* for mobiles and tabs navbar design starts  */
 @media (max-width: 1025px) {
   .navbar {
     display: none;
@@ -120,22 +119,21 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    background: linear-gradient(rgba(255, 255, 255, 0.687),rgb(58, 52, 87));
-    /* background: url("/src/assets/backgrounds/29371.jpg"); */
+    background: linear-gradient(rgba(255, 255, 255, 0.687), rgb(58, 52, 87));
     background-position: center;
     background-size: cover;
     border: 2px solid black;
   }
-  .nav-voice{
+  .nav-voice {
     box-sizing: border-box;
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     transform: scale(0.8);
-    width:100px;
-    margin-right:30px;
+    width: 100px;
+    margin-right: 30px;
   }
-  
+
   .nav-items {
     width: 100%;
     display: flex;
@@ -190,6 +188,10 @@
     transform: translateY(20px);
   }
 }
+
+/* for mobiles and tabs navbar design ends */
+
+/* for PC's navbar design starts */
 @media (min-width: 1025px) {
   .navbar {
     margin: 0;
@@ -200,3 +202,4 @@
     display: none;
   }
 }
+/* for PC's navbar design ends */

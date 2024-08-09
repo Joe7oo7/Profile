@@ -4,15 +4,16 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./Aboutpage.css";
 import Lottie from "react-lottie";
 import Wave from "react-wavify";
-import first_image from "/public/assets/Myimg/1.webp"
-import second_image from "/public/assets/Myimg/2.webp"
-import third_image from "/public/assets/Myimg/3.webp"
+import first_image from "/public/assets/Myimg/1.webp";
+import second_image from "/public/assets/Myimg/2.webp";
+import third_image from "/public/assets/Myimg/3.webp";
 
 const AboutPage = () => {
   const [animationClassLeft, setAnimationClassLeft] = useState("open-left");
 
   const [animationClassRight, setAnimationClassRight] = useState("open-right");
 
+  // for custom classname changes
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -21,20 +22,29 @@ const AboutPage = () => {
     }, 1000);
 
     const onLoad = () => {
-      document.documentElement.classList.add('loaded');
-      document.body.classList.add('loaded');
+      document.documentElement.classList.add("loaded");
+      document.body.classList.add("loaded");
     };
-    window.addEventListener('load', onLoad);
-  
-    
-    return () =>{ clearTimeout(timer);
-    window.removeEventListener('load', onLoad);};
+    window.addEventListener("load", onLoad);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("load", onLoad);
+    };
   }, []);
 
   return (
     <div className="about-page">
       <div className={`left-sidebar1 element ${animationClassLeft}`}>
-        <Carousel className="carousel" showThumbs={false} autoPlay interval={4000} infiniteLoop>
+        {/* carousal image items */}
+
+        <Carousel
+          className="carousel"
+          showThumbs={false}
+          autoPlay
+          interval={4000}
+          infiniteLoop
+        >
           <div className="carousel-slide">
             <img
               className="my-image"
@@ -43,6 +53,7 @@ const AboutPage = () => {
               loading="lazy"
             />
           </div>
+
           <div className="carousel-slide">
             <img
               className="my-image"
@@ -61,7 +72,12 @@ const AboutPage = () => {
           </div>
         </Carousel>
       </div>
-      <div className={`right-sidebar1 container element ${animationClassRight}`}>
+
+      {/* Right side items... details about me   */}
+
+      <div
+        className={`right-sidebar1 container element ${animationClassRight}`}
+      >
         <h2 className="text-decoration-underline mb-5">About Me</h2>
         <div className="row">
           <div className="heading col-3">

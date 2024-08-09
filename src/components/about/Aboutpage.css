@@ -46,6 +46,8 @@
   transition: opacity 0.5s ease-in-out;
 }
 
+/* For Pc's */
+
 @media (min-width: 1025px) {
   .about-page {
     padding: 15vh 0vh 0vh 0vh;
@@ -116,6 +118,8 @@
   }
 }
 
+/* For tabs */
+
 @media (max-width: 1025px) {
   .sea {
     display: none;
@@ -126,7 +130,11 @@
     gap: 10vh;
     justify-content: space-between;
     padding: 15vh 0vh 0vh 0vh;
-    background: linear-gradient(rgb(88, 90, 228), rgb(18, 15, 58),rgb(47, 41, 130));
+    background: linear-gradient(
+      rgb(88, 90, 228),
+      rgb(18, 15, 58),
+      rgb(47, 41, 130)
+    );
   }
 
   /* Add this to your existing CSS */
@@ -207,6 +215,8 @@
     min-width: 90%;
   }
 }
+
+/* animations */
 
 @keyframes from-right1 {
   0% {

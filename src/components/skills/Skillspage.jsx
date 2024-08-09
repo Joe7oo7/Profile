@@ -13,7 +13,11 @@ import icon10 from '/public/assets/icons/aws-svgrepo-com.svg';
 const Skillspage = () => {
   return (
     <div>
+
       <div className="skills-container">
+        
+{/* every skill with images */}
+
         <div className="skill">
           <h5>HTML5</h5>
           <img

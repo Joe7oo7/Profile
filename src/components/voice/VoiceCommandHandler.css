@@ -15,9 +15,6 @@
     align-items: center;
     transform: scale(0.8);
     margin-left: 8vw;
-  
-
-
 }
 .voice-btn{
     border-radius: 10px;
@@ -28,6 +25,8 @@
     background: linear-gradient(rgb(42, 35, 77), rgb(198, 178, 244));
 
 }
+
+/* for mobile tabs design starts  */
 
 @media(max-width:1025px){
  .voice-container{
@@ -42,3 +41,5 @@
     box-shadow:  -32px 12px 0 0 ;     
 }
 }
+
+/* for mobile tabs design ends  */

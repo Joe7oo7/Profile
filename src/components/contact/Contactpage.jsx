@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useForm,} from "react-hook-form";
+import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import "./Contactpage.css";
 
@@ -10,21 +10,22 @@ const Contactpage = () => {
     formState: { errors },
     reset,
   } = useForm();
-  const [successMessage,setSuccessMessage]=useState("");
+  const [successMessage, setSuccessMessage] = useState("");
 
   // email js section starts...
+
   const onSubmit = (data) => {
     emailjs
       .send("Jose7o7", "Jose7oo7", data, "mR6LGHCOuWNaOyPv9")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
         setSuccessMessage("Your email  has been sent successfully");
-        
+
         reset();
       })
       .catch((error) => {
         console.error("FAILED...", error);
-        setSuccessMessage("Failed to send email.please try again.")
+        setSuccessMessage("Failed to send email.please try again.");
       });
   };
   // email js section ...ends
@@ -35,6 +36,7 @@ const Contactpage = () => {
         Mail Me
       </h3>
 
+      {/* react hook form starts */}
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-group">
           <label htmlFor="from_name">Name</label>
@@ -44,7 +46,6 @@ const Contactpage = () => {
             name="from_name"
             className="form-control"
             placeholder="Enter your Name"
-          
             {...register("from_name", { required: "Name is required" })}
           />
 
@@ -100,15 +101,14 @@ const Contactpage = () => {
           )}
         </div>
         <div className="btns">
-
-        <button type="submit" className="btn btn-primary">
-          Send
-        </button>
-        <div className="ack "> {
-          successMessage &&( <div className="">{successMessage}</div>
-          )}</div>
-       
+          <button type="submit" className="btn btn-primary">
+            Send
+          </button>
+          <div className="ack ">
+            {" "}
+            {successMessage && <div className="">{successMessage}</div>}
           </div>
+        </div>
       </form>
     </div>
   );
