@@ -120,13 +120,22 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    background: linear-gradient(rgba(255, 255, 255, 0.687),rgb(27, 18, 71));
+    background: linear-gradient(rgba(255, 255, 255, 0.687),rgb(58, 52, 87));
     /* background: url("/src/assets/backgrounds/29371.jpg"); */
     background-position: center;
     background-size: cover;
     border: 2px solid black;
   }
-
+  .nav-voice{
+    box-sizing: border-box;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    transform: scale(0.8);
+    width:100px;
+    margin-right:30px;
+  }
+  
   .nav-items {
     width: 100%;
     display: flex;

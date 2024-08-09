@@ -41,16 +41,15 @@ const Navbarpage = () => {
              Education
             </Link>
           </li>
-          {/* <li  className="nav-items">
-            <Link className="nav-link" to="/modet">
-             Modet
-            </Link>
-          </li> */}
         </ul>
       </nav>
 
       <div className="navigation fixed-top">
         <ul className="nav-items">
+        <li className="list nav-voice">
+            <VoiceCommandHandler></VoiceCommandHandler>  
+          </li>
+     
           <li className="list">
             <Link to="/home">
               <span className="icon">
@@ -60,6 +59,8 @@ const Navbarpage = () => {
               <span className="circle"></span>
             </Link>
           </li>
+        
+
           <li className="list">
             <Link to="/about">
               <span className="icon">

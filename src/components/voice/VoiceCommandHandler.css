@@ -29,6 +29,16 @@
 
 }
 
-  
-
-  
+@media(max-width:1025px){
+ .voice-container{
+    border-radius: 50%;
+    border:none;
+ }
+ .voice-btn{
+    border-radius: 50%;
+    padding:20%;
+    color:rgb(0, 0, 0);
+    font-size:15px;
+    box-shadow:  -32px 12px 0 0 ;     
+}
+}

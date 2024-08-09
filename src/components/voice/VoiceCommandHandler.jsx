@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-import { useNavigate,useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import SpeechRecognition, {
   useSpeechRecognition,
 } from "react-speech-recognition";
-
 import "./VoiceCommandHandler.css";
 import { useState } from "react";
 
@@ -11,7 +10,7 @@ const VoiceCommandHandler = () => {
   const [isListening, setIsListening] = useState(false);
 
   const navigate = useNavigate();
-  const location =  useLocation();
+  const location = useLocation();
   const commands = [
     {
       command: ["open home", "home", "goto home", "navigate to home"],
@@ -43,6 +42,13 @@ const VoiceCommandHandler = () => {
       ],
       callback: () => navigate("/education"),
     },
+    {
+      command: [
+       "degree"
+      ],
+      callback: () => navigate("/degree"),
+    },
+    
   ];
 
   const { transcript, resetTranscript } = useSpeechRecognition({ commands });
@@ -53,25 +59,25 @@ const VoiceCommandHandler = () => {
     }
   }, []);
 
-  useEffect(()=>{
+  useEffect(() => {
     resetTranscript();
-  },[location,resetTranscript]);
+  }, [location, resetTranscript]);
 
   const handleButtonClick = () => {
     if (isListening) {
       SpeechRecognition.stopListening();
+    } else   try {
+      SpeechRecognition.startListening({ continuous: true });
+    } catch (error) {
+      console.error("Error starting speech recognition:", error);
     }
-    else
-    {
-      SpeechRecognition.startListening({continuous:true});
-    }
-    setIsListening(!isListening)
+    setIsListening(!isListening);
   };
 
   return (
     <div className="voice-container">
       <button className="voice-btn" onClick={handleButtonClick}>
-        {isListening?"Stop Listening":"Start Listening"}
+        {isListening ? "Stop Listening" : "Start Listening"}
       </button>
       <h5 className="mt-2 ml-5">{transcript}</h5>
     </div>
