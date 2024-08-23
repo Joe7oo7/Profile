@@ -6,8 +6,11 @@ import Aboutpage from "./components/about/Aboutpage";
 import Contactpage from "./components/contact/Contactpage";
 import Skillspage from "./components/skills/Skillspage";
 import Educationpage from "./components/education/Educationpage";
+
 import 'bootstrap/dist/css/bootstrap.min.css'
+
 import VoiceCommandHandler from "./components/voice/VoiceCommandHandler";
+import Projectspage from "./components/projects/Projectspage";
 
 function App() {
 
@@ -22,6 +25,7 @@ function App() {
           <Route path="/contact" element={<Contactpage />}></Route>
           <Route path="/skills" element={<Skillspage/>}></Route>
           <Route path="/education" element={<Educationpage/>}></Route>
+          <Route path="/projects" element={<Projectspage/>}></Route>
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>

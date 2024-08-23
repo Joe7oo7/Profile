@@ -11,8 +11,14 @@ import {
   faEnvelope,
   faGraduationCap,
   faCode,
+  faProjectDiagram,
+  faFile,
+  faBookSkull,
+  faTimeline,
+  faPeopleRoof,
 } from "@fortawesome/free-solid-svg-icons";
 import VoiceCommandHandler from "../voice/VoiceCommandHandler";
+import { FaBook, FaFacebook, FaFolder, FaProductHunt } from "react-icons/fa";
 const Navbarpage = () => {
   return (
     <div>
@@ -48,6 +54,12 @@ const Navbarpage = () => {
               Education
             </Link>
           </li>
+          <li className="nav-items">
+            <Link className="nav-link" to="/projects">
+              Projects
+            </Link>
+          </li>
+          
         </ul>
       </nav>
       {/* for PC's navbar design ends */}
@@ -102,6 +114,16 @@ const Navbarpage = () => {
                 <FontAwesomeIcon icon={faGraduationCap} size="1x" />
               </span>
               <span className="text">Education</span>
+              <span className="circle"></span>
+            </Link>
+          </li>
+
+          <li className="list">
+            <Link to="/projects">
+              <span className="icon">
+                <FontAwesomeIcon icon={faProjectDiagram} size="1x" />
+              </span>
+              <span className="text">Projects</span>
               <span className="circle"></span>
             </Link>
           </li>

@@ -4,7 +4,7 @@ import VanillaTilt from "vanilla-tilt";
 import { FaHtml5 } from "react-icons/fa";
 import "./Homepage.css";
 import cv from "/public/assets/Josephrex A CV.pdf";
-import {
+import {    
   FaLinkedin,
   FaStackOverflow,
   FaGithub,
