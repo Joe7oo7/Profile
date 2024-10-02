@@ -7,6 +7,9 @@ import Wave from "react-wavify";
 import first_image from "/public/assets/Myimg/1.webp";
 import second_image from "/public/assets/Myimg/2.webp";
 import third_image from "/public/assets/Myimg/3.webp";
+import j1 from '/public/assets/Myimg/4.webp'
+import j2 from '/public/assets/Myimg/5.webp'
+import j3 from '/public/assets/Myimg/6.webp'
 
 const AboutPage = () => {
   const [animationClassLeft, setAnimationClassLeft] = useState("open-left");
@@ -48,16 +51,7 @@ const AboutPage = () => {
           <div className="carousel-slide">
             <img
               className="my-image"
-              src={first_image}
-              alt="Image 1"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="carousel-slide">
-            <img
-              className="my-image"
-              src={second_image}
+              src={j2}
               alt="Image 2"
               loading="lazy"
             />
@@ -65,7 +59,7 @@ const AboutPage = () => {
           <div className="carousel-slide">
             <img
               className="my-image"
-              src={third_image}
+              src={j2}
               alt="Image 3"
               loading="lazy"
             />

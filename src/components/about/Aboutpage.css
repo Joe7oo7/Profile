@@ -77,7 +77,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: 50% 20vh;
+    object-position: 70% 10vh;
   }
   .right-sidebar1 {
     animation: top-down 1s ease infinite alternate-reverse;
@@ -159,9 +159,9 @@
   .my-image {
     max-height: 100%; /* Full height of the parent */
     max-width: 100%; /* Full width of the parent */
-    border-radius: 50%; /* Make the image round */
+   /* Make the image round */
     object-fit: cover; /* Ensure the image covers the area */
-    object-position: 50% 20vh; /* Center the image */
+    object-position: 30% 15vh; /* Center the image */
   }
 
   .right-sidebar1 {
@@ -201,8 +201,9 @@
   .my-image {
     width: 100%;
     height: 100%;
-    border-radius: 50%; /* Make the image round */
+ /* Make the image round */
     object-fit: cover; /* Ensure the image covers the area */
+    object-position: 50% 10vh;
   }
   .right-sidebar1 {
     max-width: 90%;

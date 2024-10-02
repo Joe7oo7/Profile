@@ -30,7 +30,7 @@ const Navbarpage = () => {
         <VoiceCommandHandler></VoiceCommandHandler>
         <ul className="navbar-nav nav-links">
           <li className="nav-items">
-            <Link className="nav-link" to="/">
+          <Link className="nav-link" to="/">
               Home
             </Link>
           </li>

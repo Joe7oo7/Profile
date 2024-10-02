@@ -18,7 +18,9 @@
   text-align: center;
   border: 1px solid #ccc;
   text-align:left;
-  min-height:200px;
+  height:200px;
+  
+  width:30vw;
   border-radius: 20px;
   box-shadow:32px 32px 0 0  black;
 }
