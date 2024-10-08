@@ -6,7 +6,6 @@ import Aboutpage from "./components/about/Aboutpage";
 import Contactpage from "./components/contact/Contactpage";
 import Skillspage from "./components/skills/Skillspage";
 import Educationpage from "./components/education/Educationpage";
-
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import VoiceCommandHandler from "./components/voice/VoiceCommandHandler";

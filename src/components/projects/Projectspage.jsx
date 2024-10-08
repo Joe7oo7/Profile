@@ -37,7 +37,7 @@ const Projectspage = () => {
           <img src={project.image} alt={project.name} className="project-image" />
           <h5>{project.framework}</h5>
           <p>{project.description}</p>
-          <a href={project.link} class="text-decoration-none text-light project_link ">View Project</a>
+          <a href={project.link} className="text-decoration-none text-light project_link ">View Project</a>
         </div>
       ))}
     </div>
