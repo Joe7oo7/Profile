@@ -119,10 +119,10 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    background: linear-gradient(rgba(255, 255, 255, 0.687), rgb(58, 52, 87));
+    background: linear-gradient(#7b55f6af, #0d062f);
     background-position: center;
     background-size: cover;
-    border: 2px solid black;
+    border-bottom: 2px solid rgb(255, 255, 255);
   }
   .nav-voice {
     box-sizing: border-box;

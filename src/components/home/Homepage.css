@@ -10,7 +10,7 @@
     padding: 0% 8% 0%;
     background-size: cover;
     background-position: center;
-    background-color: rgb(91, 100, 207);
+    background-color: rgb(86, 97, 134);
   }
   
   /* Hero Section Styles */
@@ -19,7 +19,7 @@
   }
   
   .home-content h3 {
-    color:#040310;
+    color:#7f8cea;
     font-size: 2rem;
     font-weight: 700;
     flex-basis: 20%;
@@ -294,6 +294,7 @@
       flex-direction: column;
       width: 100%;
       padding: 15vh 5vh 0vh 5vh;
+      background: linear-gradient(to right, #050738, #220f48);
     }
   
     .home-img {
@@ -302,12 +303,12 @@
   
     .home-content {
       margin-left: -2em;
-      border: 2px solid #00000050;
-      background:linear-gradient(rgb(69, 42, 110),rgb(102, 102, 223));
-      padding: 10%;
+      border: 10px solid #baa4ed50;
       border-radius: 15px;
+      background: linear-gradient(to right, #090c4e71, #cbc6d6);
+      padding: 10%;
       width: 100%;
-      box-shadow: 32px 32px 0px 0px rgba(0, 0, 0, 0.8);
+      box-shadow: 32px 32px #000c;
       animation: up-down 1s ease-in-out infinite alternate-reverse;
       transition: 1s ease;
       margin-top: 100px;
@@ -322,6 +323,7 @@
   .home-content{
     margin-top:10vh;
     width:100%;
+    padding:4vh;
   }
   .typing-text{
     font-size:1.2rem;
@@ -333,6 +335,7 @@
    display: inline-flex;
    justify-content: flex-start;
    width:80vw;
+   gap:2px;
   
   }
   .social-icon a{
@@ -343,21 +346,29 @@
   .btn{
     margin-right:30px;
   }
-
 }
 
 @media (max-width:390px){
- 
+  .home-content{
+    width:100%;
+    padding: 2vh;
+  }
   .typing-text{
-    font-size:1.2rem;
+    font-size:1rem;
   }
   .home-content h3{
-     font-size:1.2rem;
+     font-size:1.1rem;
   }
+
   .social-icon a{
     gap:0;
-    justify-content: center;
-    margin:0rem;  
+    display: inline-flex;
+    height:2.5rem;
+    width:2.5rem;
+    padding:5px;
+    
+    
+    
   }
 
 }

@@ -1,29 +1,78 @@
+/* Projectspage.css */
+
 .projects-container {
-    min-height: 100vh;
-    margin-top: 10vh;
-    width: 100%;
-    padding:6vh 6vh 6vh 6vh;
-    display:grid;
-    gap:8vh;
-    place-items: center;
-    place-content: center;
-    grid-template-columns: repeat(2,1fr);
-    background: linear-gradient(rgb(34, 26, 71), rgba(49, 5, 139, 0.646));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 120px 40px 30px 40px;
+  min-height:100vh;
+  background: linear-gradient(black, rgba(47, 47, 144, 0.646));
 }
-.project{
-  box-sizing: border-box;
-  color:white;
-  background: linear-gradient(rgb(38, 29, 70), rgba(62, 62, 129, 0.646));
-  padding: 20px;
-  text-align: center;
-  border: 1px solid #ccc;
-  text-align:left;
-  height:200px;
+
+.project {
+  background: linear-gradient(rgb(82, 39, 200), rgba(0, 0, 0, 0.646)); 
+  color: #ffffff;
+  border: 5px solid #ffffff;
+  border-radius: 18px;
+  padding: 50px;
+  width: 400px; /* Fixed width for each project card */
+  height: 450px; /* Fixed height for each project card */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-10px); /* Hover effect */
+}
+
+.project h2 {
   
-  width:30vw;
-  border-radius: 20px;
-  box-shadow:32px 32px 0 0  black;
+  font-size: 2rem;
+  margin: 0;
 }
+
+.project h5 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.project p {
+  flex-grow: 1;
+  margin: 10px 0;
+  
+}
+
+.project_link {
+  color: #61dafb;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project_link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1025px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 98%; /* Adjust width for smaller screens */
+    height: auto; /* Allow flexible height on smaller screens */
+    padding:4vh;
+    word-break: break-word;
+  }
+}
+
 .project:nth-child(1){
     animation: flip 1s ease;
 }
@@ -43,19 +92,7 @@
     justify-content:center;
     align-items: center;
 }
-@media (max-width:1025px){
-    .projects-container{
-        grid-template-columns: repeat(1,1fr);
-        margin-top:0vh;
-        padding:20vh 6vh 6vh 6vh ;
-    }
-    .project{
-        display:flex;
-        flex-direction: column;
-        min-width:80%;
-    }
-    
-}
+
 
 
 /* animations */

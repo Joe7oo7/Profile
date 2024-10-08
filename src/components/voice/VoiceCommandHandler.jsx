@@ -45,9 +45,16 @@ const VoiceCommandHandler = () => {
       callback: () => navigate("/education"),
     },
     {
-      command: ["degree"],
-      callback: () => navigate("/degree"),
+      command: [
+        "open projects",
+        "projects",
+        "project",
+        "goto projects",
+        "navigate to projects",
+      ],
+      callback: () => navigate("/projects"),
     },
+  
   ];
   // commands ends
 
