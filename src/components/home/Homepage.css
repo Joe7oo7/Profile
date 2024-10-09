@@ -13,6 +13,10 @@
     background-color: rgb(86, 97, 134);
   }
   
+  .hug_icon{
+    height:32px;
+    width:32px;
+  }
   /* Hero Section Styles */
   .home-content {
     margin-top: 50px;
@@ -39,7 +43,6 @@
     border:2px solid black;
     border-radius:15px;
     background: linear-gradient(rgba(255, 255, 255, 0.42),rgba(170, 170, 184, 0.491));
-
   }
   .home-content p:hover{
     background:white;
@@ -346,6 +349,10 @@
   .btn{
     margin-right:30px;
   }
+  .hug_icon{
+    height:30px;
+    width:30px;
+  }
 }
 
 @media (max-width:390px){
@@ -365,11 +372,13 @@
     display: inline-flex;
     height:2.5rem;
     width:2.5rem;
-    padding:5px;
-    
-    
-    
+    padding:5px;  
   }
+  .hug_icon{
+    height:26px;
+    width:26px;
+  }
+ 
 
 }
 

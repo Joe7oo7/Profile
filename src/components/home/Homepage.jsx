@@ -138,8 +138,10 @@ const HomeComponent = () => {
           >
             <FaGithub></FaGithub>
           </a>
-          <a href="" target="_blank">
-            <img src={hug_img} alt="Huggingface_icon"    style={{ width: "32px", height: "32px" }}/>
+          <a href=""target="_blank">
+            <img src={hug_img} 
+             className="hug_icon" alt="Huggingface_icon"/>
+           
           </a>
           <a
             href="https://stackoverflow.com/users/23394959/josephrex"
