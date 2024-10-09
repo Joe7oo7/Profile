@@ -3,6 +3,7 @@ import Typed from "typed.js";
 import VanillaTilt from "vanilla-tilt";
 import { FaHtml5 } from "react-icons/fa";
 import "./Homepage.css";
+import hug_img from '/public/assets/icons/hugging.png'
 import cv from "/public/assets/Josephrex A CV.pdf";
 import {    
   FaLinkedin,
@@ -137,8 +138,8 @@ const HomeComponent = () => {
           >
             <FaGithub></FaGithub>
           </a>
-          <a href="https://dev.to/joe7oo7" target="_blank">
-            <FaDev></FaDev>
+          <a href="" target="_blank">
+            <img src={hug_img} alt="Huggingface_icon"    style={{ width: "32px", height: "32px" }}/>
           </a>
           <a
             href="https://stackoverflow.com/users/23394959/josephrex"

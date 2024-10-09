@@ -1,18 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import SpeechRecognition, {
   useSpeechRecognition,
 } from "react-speech-recognition";
 import "./VoiceCommandHandler.css";
-import { useState } from "react";
 
 const VoiceCommandHandler = () => {
   const [isListening, setIsListening] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
-  // commands starts
+  // Function to detect if the user is on a mobile device
+  const isMobileDevice = () => {
+    return /Mobi|Android/i.test(navigator.userAgent);
+  };
 
+  // Speech recognition commands
   const commands = [
     {
       command: ["open home", "home", "goto home", "navigate to home"],
@@ -54,9 +57,7 @@ const VoiceCommandHandler = () => {
       ],
       callback: () => navigate("/projects"),
     },
-  
   ];
-  // commands ends
 
   const { transcript, resetTranscript } = useSpeechRecognition({ commands });
 
@@ -65,26 +66,42 @@ const VoiceCommandHandler = () => {
       alert("Your browser does not support speech recognition.");
     }
   }, []);
-  // transcript reset section starts
 
+  // Reset transcript when location changes
   useEffect(() => {
     resetTranscript();
   }, [location, resetTranscript]);
 
-  // transcript reset section ends
-  // start and  stop button logic starts
+  // Handle button click for starting and stopping listening
   const handleButtonClick = () => {
     if (isListening) {
       SpeechRecognition.stopListening();
-    } else
+    } else {
       try {
-        SpeechRecognition.startListening({ continuous: true });
+        SpeechRecognition.startListening({ continuous: !isMobileDevice() });
       } catch (error) {
         console.error("Error starting speech recognition:", error);
       }
+    }
     setIsListening(!isListening);
   };
-  // start and  stop button logic ends
+
+  // Restart listening automatically on mobile devices when speech ends
+  useEffect(() => {
+    if (isMobileDevice()) {
+      const handleSpeechEnd = () => {
+        if (isListening) {
+          SpeechRecognition.startListening({ continuous: false });
+        }
+      };
+
+      window.addEventListener("speechend", handleSpeechEnd);
+
+      return () => {
+        window.removeEventListener("speechend", handleSpeechEnd);
+      };
+    }
+  }, [isListening]);
 
   return (
     <div className="voice-container">
