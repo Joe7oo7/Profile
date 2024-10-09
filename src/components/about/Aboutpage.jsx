@@ -8,7 +8,7 @@ import first_image from "/public/assets/Myimg/1.webp";
 import second_image from "/public/assets/Myimg/2.webp";
 import third_image from "/public/assets/Myimg/3.webp";
 import j1 from '/public/assets/Myimg/4.webp'
-import j2 from '/public/assets/Myimg/5.webp'
+import j2 from '/public/assets/Myimg/Josephrex_new.png'
 import j3 from '/public/assets/Myimg/6.webp'
 
 const AboutPage = () => {
