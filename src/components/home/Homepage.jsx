@@ -115,7 +115,7 @@ const HomeComponent = () => {
           I'm a <span className="typing-text"></span>
         </h3>
         <p className="">
-          As a Certified FullStack WebDeveloper I build things for Web, Let's
+          As a Certified Python Developer I build things for Web, Let's
           turn your vision into reality together.
         </p>
 
