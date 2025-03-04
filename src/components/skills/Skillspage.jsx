@@ -1,9 +1,9 @@
 import React from "react";
 import "./Skillspage.css";
-import icon1 from '/public/assets/icons/html.svg';
-import icon2 from '/public/assets/icons/icons8-css.svg';
-import icon3 from '/public/assets/icons/icons8-javascript.svg';
-import icon4 from '/public/assets/icons/icons8-bootstrap.svg';
+import icon1 from '/public/assets/icons/NumPy.svg';
+import icon2 from '/public/assets/icons/Pandas.svg';
+import icon3 from '/public/assets/icons/scikit-learn.svg';
+import icon4 from '/public/assets/icons/TensorFlow.svg';
 import icon5 from '/public/assets/icons/icons8-react-js.svg';
 import icon6 from '/public/assets/icons/python-svgrepo-com.svg';
 import icon7 from '/public/assets/icons/django-svgrepo-com.svg';
@@ -18,46 +18,9 @@ const Skillspage = () => {
         
 {/* every skill with images */}
 
-        <div className="skill">
-          <h5>HTML5</h5>
-          <img
-            className="img-fluid"
-            src={icon1}
-            alt="html-icon"
-          />
-        </div>
-        <div className="skill">
-          <h5>CSS3</h5>
-          <img
-            className="img-fluid"
-            src={icon2}
-            alt="css-icon"
-          />
-        </div>
-        <div className="skill">
-          <h5>Javascript</h5>
-          <img
-            className="img-fluid"
-            src={icon3}
-            alt="js-icon"
-          />
-        </div>
-        <div className="skill">
-          <h5>Bootstrap</h5>
-          <img
-            className="img-fluid"
-            src={icon4}
-            alt="bootstrap-icon"
-          />
-        </div>
-        <div className="skill">
-          <h5>React</h5>
-          <img
-            className="img-fluid"
-            src={icon5}
-            alt="react-icon"
-          />
-        </div>
+       
+       
+       
         <div className="skill">
           <h5>Python</h5>
           <img
@@ -96,6 +59,38 @@ const Skillspage = () => {
             className="img-fluid"
             src={icon10}
             alt="aws-icon"
+          />
+        </div>
+        <div className="skill">
+          <h5>NumPy</h5>
+          <img
+            className="img-fluid"
+            src={icon1}
+            alt="python-icon"
+          />
+        </div>
+        <div className="skill">
+          <h5>Pandas</h5>
+          <img
+            className="img-fluid"
+            src={icon2}
+            alt="python-icon"
+          />
+        </div>
+        <div className="skill">
+          <h5>Scikit-Learn</h5>
+          <img
+            className="img-fluid"
+            src={icon3}
+            alt="python-icon"
+          />
+        </div>
+        <div className="skill">
+          <h5>TensorFlow</h5>
+          <img
+            className="img-fluid"
+            src={icon4}
+            alt="python-icon"
           />
         </div>
       </div>
