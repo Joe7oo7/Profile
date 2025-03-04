@@ -31,7 +31,7 @@ const HomeComponent = () => {
 
     // Typed.js effect starts
     const options = {
-      strings: ["FullStack Developer", "WebDesigner", "Youtuber"],
+      strings: ["Python Developer","AI ML Engineer", "Backend Developer"],
       typeSpeed: 30,
       backSpeed: 20,
       showCursor: true,
